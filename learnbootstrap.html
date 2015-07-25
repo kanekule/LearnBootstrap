@@ -20,13 +20,260 @@
     <![endif]-->
   </head>
   <body>
-	<div class="jumbotron">
-    <h1>马敏敏的个人网站</h1>
-	<p>这个网站运用Bootstrap来开发，运用各种组件来完成对Bootstrap的初步学习及应用。</p>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Bootstrap theme</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="#">显示正文内容</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li role="separator" class="divider"></li>
+					<li class="dropdown-header">Nav header</li>
+					<li><a href="#">Separated link</a></li>
+					<li><a href="#">One more separated link</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			</div>
+		</div>
+	</nav>
+	<!--主页面-->
+	<div id="div_main" class="container theme-showcase" role="main">
+		<div class="jumbotron">
+			<h1>Hello Bootstrap!</h1>
+			<p>这个网站运用Bootstrap来开发，运用Bootstrap相关组件开发，完成学习。</p>
+			<!--<p><a class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#myModal">开始</a></p>-->
+			<p><a class="btn btn-primary btn-lg" id="start" role="button" >开始</a></p>
+		</div>
+		
+		
 	</div>
+	
+	<!--登录弹出框-->
+	<div class="modal fade" id="myModal">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" width="100">&times;</span></button>
+			<h1 class="modal-title">我是模态框</h1>
+		  </div>
+		  
+		  <div class="modal-body">
+		  
+			<div id="div_page1" class="page-header">
+				<h1>这是登录</h1>
+			</div>
+			<div class="input-group">
+				<label for="username">User Name</label>
+				<input id="usrID" type="text" class="form-control" placeholder="Your User ID" aria-describedby="username">
+			</div>
+			<p>
+				<div class="input-group">
+					<label for="password">Password</label>
+					<input id="pswd" type="password" class="form-control" placeholder="Password" aria-describedby="password">
+				</div>
+			</p>
+			
+			<div id="div_page2" class="page-header">
+				<h1>这是下拉菜单</h1>
+			</div>
+			<div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				MyDropdown
+				<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li class="dropdown-header">这是字母</li>
+					<li><a href="#">A</a></li>
+					<li><a href="#">AB</a></li>
+					<li><a href="#">ABC</a></li>
+					<li role="separator" class="divider"></li>
+					<li class="dropdown-header">这是数字</li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li role="separator" class="divider"></li>
+				</ul>
+			</div>
+			
+			<div id="div_page3" class="page-header">
+				<h1>这是标签</h1>
+			</div>
+			<span class="label label-default">Default</span>
+			<span class="label label-primary">Primary</span>
+			<span class="label label-success">Success</span>
+			<span class="label label-info">Info</span>
+			<span class="label label-warning">Warning</span>
+			<span class="label label-danger">Danger</span>
+			
+			<div id="div_page4" class="page-header">
+				<h1>您有4条未读信息</h1>
+			</div>
+			<button class="btn btn-primary" type="button">
+				Messages <span class="badge">4</span>
+			</button>
+			
+			<div id="div_page5" class="page-header">
+				<h1>这是缩略图</h1>
+			</div>
+			<div class="row">
+			  <div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+				  <img src="img/bootstrap.png" alt="...">
+				  <div class="caption">
+					<h3>Bootstrap 编码规范</h3>
+					<p>Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+				  </div>
+				</div>
+			  </div>
+			  
+			  <div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+				  <img src="img/jquery.png" alt="...">
+				  <div class="caption">
+					<h3>Bootstrap jQuery API</h3>
+					<p>根据最新的 jQuery 1.11.x 和 2.1.x 版本翻译的 jQuery API 中文文档/手册。</p>
+				  </div>
+				</div>
+			  </div>
+			  
+			  <div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+				  <img src="img/git.png" alt="...">
+				  <div class="caption">
+					<h3>Git Guide</h3>
+					<p>Git简易指南 -- 帮助你开始使用 git 的简易指南，木有高深内容，;)。</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			
+			<div id="div_page6" class="page-header">
+				<h1>这是进度条</h1>
+			</div>
+			<button type="button" id="loading" data-toggle="tooltip" title="请点我" class="btn btn-primary">Loading...</button>
+			
+			
+			<div id="div_page6" class="page-header">
+				<h1>这是表格</h1>
+			</div>
+			<div class="panel panel-default">
+			  <!-- Default panel contents -->
+			  <div class="panel-heading">表</div>
+			  <div class="panel-body">
+				<p>这是一个数据库表</p>
+			  </div>
+
+			  <!-- Table -->
+			  <table class="table">
+				<tr>
+					<td>#</td>
+					<td>第一列</td>
+					<td>第二列</td>
+					<td>第三列</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>AA</td>
+					<td>BA</td>
+					<td>CA</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>AB</td>
+					<td>BB</td>
+					<td>BC</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>AC</td>
+					<td>CB</td>
+					<td>CC</td>
+				</tr>
+				
+			  </table>
+			</div>
+			
+			
+		  </div>
+		  
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+			<button type="button" id="login" class="btn btn-primary">OK</button>
+		  </div>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+	
+	<div class="modal fade" id="myModal1">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h4 class="modal-title">Loading...</h4>
+		  </div>
+		  <div class="modal-body">
+			<div class="progress">
+				<div id="myprogress" class="progress-bar progress-bar-striped active" role="progressbar" style="width:0%">
+				
+			</div>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+		  </div>
+		</div>
+	  </div>
+	</div> 
+	
+	
+	
+	
+	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="bootstrap-3.3.5-dist/js/jquery-1.11.3.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<script src="bootstrap-3.3.5-dist/js/learnbootstrap.js"></script> 
+	
+	<script>
+		$(function(){
+			$('#loading').tooltip();
+		});
+	</script>
+	
+	<script>
+		var p;
+		$('#loading').click(function(){
+			$("#myModal1").modal('show'); 
+			p=0;
+			run();
+		})
+		//$(function(){
+			//run();
+		//});
+		function run(){
+			p+=5;
+			$("#myprogress").css("width",p+"%");
+			if(p<100){
+				var timer=setTimeout("run()",500);
+			}else{
+				$("#myModal1").modal('hide'); 
+				
+
+				
+			}
+		}
+	</script> 
+	
+	
+	
   </body>
 </html>
